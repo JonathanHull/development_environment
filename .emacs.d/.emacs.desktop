@@ -1,0 +1,30 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Feb 28 21:56:47 2018
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23191 9631 58948 618000) (desktop . "206") "jonathan@Gigabyte" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (foreground-color . "#F8F8F2") (background-color . "#191919") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 12) (right-fringe . 12) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "orange red") (environment) (sticky) (frameset--id . "7F43-2BF0-D417-5A8B") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (user-size . t) (maximized) (visibility . t) (height . 60) (width . 117) (left . 960) (top . 18)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 5) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 68) (min-pixel-width . 80) (min-pixel-height-ignore . 34) (min-pixel-width-ignore . 40) (min-pixel-height-safe . 17) (min-pixel-width-safe . 16)) leaf (pixel-width . 964) (pixel-height . 1003) (total-width . 120) (total-height . 59) (normal-height . 1.0) (normal-width . 1.0) (buffer "orgtut.org" (selected . t) (hscroll . 0) (fringes 12 12 nil) (margins 1) (scroll-bars 0 0 nil nil) (vscroll . 0) (dedicated) (point . 164) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("Java" "latex-prev" "latex" "latex-prev" "latex " "latex" "ess-" "spacemacs" "space" "org-re" "emacs s" "ESS" "eclim"))
+(setq regexp-search-ring '("package" "test"))
+(setq register-alist '((113) (48 . ";; general text editing - toggle auto-fill-mode\n(global-set-key (kbd \"C-c q\") 'auto-fill-mode)\n\n;;move between windows shortcuts\n(global-set-key (kbd \"s-<up>\") 'windmove-up)\n(global-set-key (kbd \"s-<down>\") 'windmove-down)\n(global-set-key (kbd \"s-<left>\") 'windmove-left)\n(global-set-key (kbd \"s-<right>\") 'windmove-right)\n\n;; WindMove - move between windows with key-shortcuts\n(windmove-default-keybindings 'meta)\n\n;; Highlight parenthesis\n(show-paren-mode)\n\n;; Spellcheck - flyspell mode\n(add-hook 'text-mode-hook 'flyspell-mode)\n(add-hook 'text-mode-hook 'turn-on-auto-fill)\n(add-hook 'text-mode-hook\n '(lambda() (set-fill-column 80)))\n;; Default tab width\n(setq tab-width 4)\n\n;; Latex autocomplete\n(add-hook 'latex-mode-hook\n		  '(lambda() (set-fill-column 80)))\n\n;; Evil modei\n(add-to-list 'load-path \"~/.emacs.d/elpa/evil-1.2.13\")\n(require 'evil)\n(evil-mode 1)\n")))
+(setq file-name-history '("~/projects/pyseq/alignment.py" "~/Desktop/temp/orgtut.org" "~/Desktop/temp/" "~/.emacs.d/init.el" "~/.emacs.d/config/org.el" "~/Desktop/temp/orgmode.org" "~/.emacs.d/config/emacs.el" "~/.emacs.d/init.el" "~/.emacs.d/config/emacs.el" "~/Desktop/pyt.py" "~/.emacs.d/init.el" "~/Desktop/temp/testone.tex" "~/.emacs.d/config/emacs.el" "~/.emacs.d/config/jedi.el" "~/.emacs.d/init.el" "~/projects/pyseq/alignment.py" "~/Desktop/test72.py" "~/Desktop/holder/test.py" "~/Desktop/holder" "~/Desktop/test11.py" "~/Desktop/test1.py" "~/Desktop/test.py" "~/temp/r/exam.r" "~/Desktop/test.py" "~/Desktop/HelloJava.java" "/home/jonathan/.emacs.d" "~/.emacs.d/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/jonathan/Desktop/temp/orgtut.org"
+  "orgtut.org"
+  'org-mode
+  '(auto-fill-mode linum-mode flyspell-mode undo-tree-mode)
+  164
+  '(136 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (fill-column . 80) (truncate-lines . t)))
+
