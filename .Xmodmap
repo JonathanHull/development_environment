@@ -1,0 +1,3 @@
+! who needs Capslock
+clear Lock
+keycode 66 = Escape

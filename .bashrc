@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;31m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -182,6 +182,10 @@ function cleartex () {
 		rm $1.out;
 	fi
 }
+
+## Redshift commands
+alias rredshift="redshift -l 54.95:-1.56 -t 6500:5000 -g 0.8 -m randr &"
+alias kredshift="killall redshift"
 
 ## xorg configuration.
 xset s 1200

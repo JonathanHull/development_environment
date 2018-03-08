@@ -17,6 +17,7 @@ set tabstop=4
 set shiftwidth=4
 set ruler
 set backspace=indent,eol,start 
+colorscheme desert
 
 set showcmd
 set showmatch
@@ -45,5 +46,5 @@ nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
 
 " Airline config source file
-so ~/.vim/source/vim-airline.vim
+so ~/.config/.vim/source/vim-airline.vim
 set guifont=DejaVu\ Sans:s12

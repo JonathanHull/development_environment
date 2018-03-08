@@ -1,0 +1,14 @@
+*foreground: #00cc00
+*foreground_bold: #a8a19f
+*cursor: #a8a19f
+*background:       #1b1918
+
+!URxvt commands
+URxvt.font: xft:monospace:size=9
+URxvt.per-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+
+!Remove Scrollbar
+URxvt.scrollBar: false

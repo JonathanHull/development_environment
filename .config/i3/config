@@ -203,7 +203,7 @@ bindsym F9 exec /home/jonathan/.config/i3/scripts/audio_device.sh
 
 # List programs to start on login below:
 exec redshift -l 54.95:-1.56 -t 6500:5000 -g 0.8 -m randr
-exec /home/jonathan/.config/i3/auto_layout.sh
+#exec /home/jonathan/.config/i3/auto_layout.sh
 
 # Executes everytime config is reloaded: Wallpaper
 exec_always feh --bg-scale /home/jonathan/.i3/wallpapers/futurama.jpg
