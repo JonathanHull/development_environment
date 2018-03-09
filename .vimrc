@@ -46,5 +46,5 @@ nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
 
 " Airline config source file
-so ~/.config/.vim/source/vim-airline.vim
+so ~/.vim/source/vim-airline.vim
 set guifont=DejaVu\ Sans:s12
