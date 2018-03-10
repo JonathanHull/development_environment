@@ -3,9 +3,10 @@
 *cursor: #a8a19f
 *background:       #1b1918
 
+
 !URxvt commands
-URxvt.font: xft:monospace:size=9
-URxvt.per-ext-common: default,matcher
+!URxvt.font: xft:monospace:size=9
+Urxvt.font: xft:DejaVu Sans Mono for Powerline-9
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.keysym.C-Delete: perl:matcher:last
 URxvt.keysym.M-Delete: perl:matcher:list

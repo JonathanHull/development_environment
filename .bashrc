@@ -186,6 +186,7 @@ function cleartex () {
 ## Redshift commands
 alias rredshift="redshift -l 54.95:-1.56 -t 6500:5000 -g 0.8 -m randr &"
 alias kredshift="killall redshift"
+alias urxvt="urxvt -fn 'xft:DejaVu Sans Mono for Powerline-9'"
 
 ## xorg configuration.
 xset s 1200
