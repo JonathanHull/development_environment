@@ -201,8 +201,9 @@ bar {
 bindsym XF86AudioRaiseVolume exec --no-startup-id $i3_home/scripts/audio_volume.sh +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id $i3_home/scripts/audio_volume.sh -5%
 bindsym XF86AudioMute exec --no-startup-id $i3_home/scripts/audio_volume.sh mute
-bindsym F9 exec /home/jonathan/.config/i3/scripts/audio_device.sh
-
+#bindsym F9 exec /home/jonathan/.config/i3/scripts/audio_device.sh
+bindsym F9 exec /home/jonathan/.config/i3/scripts/toggleRS.sh
+ 
 # List programs to start on login below:
 exec redshift -l 54.95:-1.56 -t 6500:5000 -g 0.8 -m randr
 #exec /home/jonathan/.config/i3/auto_layout.sh
