@@ -45,6 +45,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'paganini t)
 (global-linum-mode t)
+(scroll-bar-mode 0)
 ;(menu-bar-mode -1)
 (tool-bar-mode -1)
 
