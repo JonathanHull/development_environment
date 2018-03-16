@@ -79,6 +79,9 @@ if [[ -f ~/.shell_aliases ]]; then
 	. ~/.shell_aliases
 fi
 
+## Prioritise Python2.7  over 3.6
+alias python="python2.7"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
