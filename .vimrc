@@ -36,7 +36,11 @@ inoremap <Right> <nop>
 inoremap <Left> <nop>
 
 " Vim bindings
+" Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
+
+" Toggle spell mode.
+map <F10> :set spell! spell?<cr>
 
 " Change default .tex file syntax detection to latex.
 let g:tex_flavor="latex"

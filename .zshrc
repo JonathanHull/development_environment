@@ -69,6 +69,12 @@ source $ZSH/oh-my-zsh.sh
 ## Set vim-like editing
 set -o vi
 
+## Latex pathing
+export PATH=$PATH:/home/jonathan/.vim/bundle/vim-live-latex-preview/bin
+export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
+export INFOPATH=$INFOPATH:/usr/local/texlive/2017/texmf-dist/doc/info
+export MANPATH=$MANPATH:/usr/local/texlive/2017/texmf-dist/doc/man
+
 ## Enable reverse history search
 bindkey -v
 bindkey "^R" history-incremental-search-backward
