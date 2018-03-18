@@ -38,6 +38,7 @@ inoremap <Left> <nop>
 " Vim bindings
 " Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
+imap <C-x> <Esc>:set rnu! rnu?<CR>a
 
 " Toggle spell mode.
 map <F10> :set spell! spell?<cr>
