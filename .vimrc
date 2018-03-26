@@ -17,7 +17,8 @@ set tabstop=4
 set shiftwidth=4
 set ruler
 set backspace=indent,eol,start 
-set vb
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 colorscheme desert
 
 set showcmd
