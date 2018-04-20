@@ -88,6 +88,9 @@ fi
 ## Prioritise Python2.7  over 3.6
 alias python="python2.7"
 
+## Add directories to perl lib path
+export PERL5LIB=.
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

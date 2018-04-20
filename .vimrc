@@ -43,6 +43,9 @@ inoremap <Left> <nop>
 map <C-x> :set rnu! rnu?<cr>
 imap <C-x> <Esc>:set rnu! rnu?<CR>a
 
+" Toggle NerdTree
+map <F5> :NERDTreeToggle <cr>
+ 
 " Toggle spell mode.
 map <F10> :set spell! spell?<cr>
 
