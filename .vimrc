@@ -38,6 +38,12 @@ inoremap <Down> <nop>
 inoremap <Right> <nop>	
 inoremap <Left> <nop>
 
+" fugitive shortcuts
+map <leader>gb :Gblame <cr>
+map <leader>gd :Gdiff <cr>
+map <leader>gs :Gstatus <cr>
+map <leader>gl :Glog <cr>
+
 " Vim bindings
 " Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
