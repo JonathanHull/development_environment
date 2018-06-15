@@ -191,3 +191,6 @@ alias urxvt="urxvt -fn 'xft:DejaVu Sans Mono for Powerline-9'"
 ## xorg configuration.
 xset s 1200
 set -o vi
+
+# added by Anaconda3 installer
+export PATH="/home/jonathan/anaconda3/bin:$PATH"

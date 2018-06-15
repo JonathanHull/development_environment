@@ -86,7 +86,7 @@ if [[ -f ~/.shell_aliases ]]; then
 fi
 
 ## Prioritise Python2.7  over 3.6
-alias python="python2.7"
+## alias python="python2.7"
 
 ## Add directories to perl lib path
 export PERL5LIB=.
@@ -117,4 +117,10 @@ export PERL5LIB=.
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias v='vim'
+alias p="/home/jonathan/Desktop/convolutional_ML/python_env/bin/python3.6"
+alias ppip="/home/jonathan/Desktop/convolutional_ML/python_env/bin/pip3"
+alias ip="/home/jonathan/Desktop/convolutional_ML/python_env/bin/ipython3"
 
+# added by Anaconda3 installer
+export PATH="/home/jonathan/anaconda3/bin:$PATH"
