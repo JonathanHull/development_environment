@@ -22,7 +22,7 @@
  '(minimap-highlight-line nil)
  '(minimap-width-fraction 0.04)
  '(minimap-window-location (quote right))
- '(package-selected-packages (quote (minimap pdf-tools magit jedi evil)))
+ '(package-selected-packages (quote (circe minimap pdf-tools magit jedi evil)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

@@ -10,6 +10,7 @@
 Urxvt.font: xft:DejaVu Sans Mono for Powerline-9
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.keysym.C-Delete: perl:matcher:last
+URxvt*depth: 32
 URxvt.keysym.M-Delete: perl:matcher:list
 
 !Remove Scrollbar

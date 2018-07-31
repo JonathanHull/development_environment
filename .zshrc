@@ -118,9 +118,15 @@ export PERL5LIB=.
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v='vim'
-alias p="/home/jonathan/Desktop/convolutional_ML/python_env/bin/python3.6"
-alias ppip="/home/jonathan/Desktop/convolutional_ML/python_env/bin/pip3"
-alias ip="/home/jonathan/Desktop/convolutional_ML/python_env/bin/ipython3"
+
+## current python project conda environment alias
+alias tw="source activate twitch"
 
 # added by Anaconda3 installer
 export PATH="/home/jonathan/anaconda3/bin:$PATH"
+
+## Start tmux when terminal opens
+#tmux attach &> /dev/null 
+#if [[ ! $TERM =~ screen ]]; then
+#    exec tmux
+#fi
