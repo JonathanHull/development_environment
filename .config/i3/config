@@ -104,6 +104,9 @@ bindsym $mod+a focus parent
 # Path name variables
 exec_allways $i3_home/scripts/test.sh
 
+# toggle i3status bar
+bindsym $mod+Shift+m bar mode toggle
+
 # Workspace name variables
 set $workspace1 "1: Main "
 set $workspace2 "2: FireF"
