@@ -29,6 +29,17 @@ set hidden
 set mouse=a
 set t_Co=256
 
+" Disable shell commands
+set exrc
+set secure
+
+" enable doxygen highlighting
+augroup project
+    autocmd!
+    autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
+augroup END
+
+
 " Store buffers after closing vim.
 set viminfo=%,<800,'10,/50
 
