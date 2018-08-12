@@ -29,6 +29,11 @@ set hidden
 set mouse=a
 set t_Co=256
 
+set ssop-=options " Do not store global/local values in a session
+set ssop-=fields  " Do not store folds
+let g:session_autoload = 'no' " dissable vim-session start dialog
+let g:session_autosave = 'yes' " Enable vim-session autosaving
+
 " Disable shell commands
 set exrc
 set secure

@@ -27,4 +27,10 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule ".vim/bundle/bufexplorer"]
 	path = .vim/bundle/bufexplorer
-	url = https://github.com/jlanzarotta/bufexplorer.git
+    url = https://github.com/jlanzarotta/bufexplorer.git
+[submodule ".vim/bundle/vim-session"]
+    path = .vim/bundle/vim-session
+    url = https://github.com/xolox/vim-session
+[submodule ".vim/bundle/vim-misc"]
+    path = .vim/bundle/vim-misc
+    url = https://github.com/xolox/vim-misc
