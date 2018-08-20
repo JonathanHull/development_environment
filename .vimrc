@@ -89,5 +89,5 @@ set guifont=DejaVu\ Sans:s12
 "autocmd VimEnter, VimLeave * silent !tmux set status
 "
 "" Tmux hide window when vim runs
-autocmd VimEnter * silent ! tmux set -g status off
-autocmd VimLeave * silent ! tmux set -g status on
+autocmd VimEnter * silent ! tmux set status off
+autocmd VimLeave * silent ! tmux set status on
