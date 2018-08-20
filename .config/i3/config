@@ -33,7 +33,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec gnome-terminal
-bindsym $mod+Return exec --no-startup-id  urxvt -fn "xft:DejaVu Sans Mono for Powerline-9"
+bindsym $mod+Return exec --no-startup-id  urxvt -fn "xft:DejaVu Sans Mono for Powerline-9" -e tmux -2
 
 # kill focused window
 bindsym $mod+Shift+q kill

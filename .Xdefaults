@@ -12,6 +12,7 @@ URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.keysym.C-Delete: perl:matcher:last
 URxvt*depth: 32
 URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.termName: rxvt-unicode
 
 !Remove Scrollbar
 URxvt.scrollBar: false

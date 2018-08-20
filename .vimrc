@@ -84,3 +84,10 @@ nnoremap <C-y> 2<C-y>
 " Airline config source file
 so ~/.vim/source/vim-airline.vim
 set guifont=DejaVu\ Sans:s12
+
+"" Tmux rename window to vim
+"autocmd VimEnter, VimLeave * silent !tmux set status
+"
+"" Tmux hide window when vim runs
+autocmd VimEnter * silent ! tmux set -g status off
+autocmd VimLeave * silent ! tmux set -g status on

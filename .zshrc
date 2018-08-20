@@ -9,6 +9,11 @@
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 
+## Tmux settings
+#alias tmux="tmux -2"
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -126,7 +131,14 @@ alias tw="source activate twitch"
 export PATH="/home/jonathan/anaconda3/bin:$PATH"
 
 ## Start tmux when terminal opens
+#alias tmux="tmux -2"
 #tmux attach &> /dev/null 
 #if [[ ! $TERM =~ screen ]]; then
 #    exec tmux
 #fi
+
+## Tmux settings
+alias tmux="tmux -2"
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux
+
