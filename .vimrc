@@ -66,7 +66,8 @@ map <leader>gl :Glog <cr>
 " Vim bindings
 " Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
-imap <C-x> <Esc>:set rnu! rnu?<CR>a
+imap <C-x> <Esc>:set rnu! rnu?<CR>
+inoremap <C-s> <Esc>:Update<CR>
 
 " Toggle NerdTree
 map <F5> :NERDTreeToggle <cr>
