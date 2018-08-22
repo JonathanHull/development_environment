@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/vim-misc"]
     path = .vim/bundle/vim-misc
     url = https://github.com/xolox/vim-misc
+[submodule ".vim/bundle/Command-T"]
+    path = .vim/bundle/Command-T
+    url = https://github.com/wincent/command-t
