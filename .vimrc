@@ -67,7 +67,23 @@ map <leader>gl :Glog <cr>
 " Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
 imap <C-x> <Esc>:set rnu! rnu?<CR>
-inoremap <C-s> <Esc>:Update<CR>
+
+" Bind Control-S to save file.
+" If the current buffer has never been saved, it will have no name,
+" call the file browser to save it, otherwise just save it.
+command -nargs=0 -bar Update if &modified 
+                           \|    if empty(bufname('%'))
+                           \|        browse confirm write
+                           \|    else
+                           \|        confirm write
+                           \|    endif
+                           \|endif
+nnoremap <silent> <C-S> :<C-u>Update<CR>
+
+" CommandT bindings
+nnoremap <C-t><C-f> :CommandT<CR>
+nnoremap <C-t><C-b> :CommandTBuffer<CR>
+nnoremap <C-t><C-r> :CommandTCommand<CR>
 
 " Toggle NerdTree
 map <F5> :NERDTreeToggle <cr>
@@ -81,6 +97,11 @@ let g:tex_flavor="latex"
 " Set Vim to scroll multiple lines per tick.
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
+
+" Typo fixes
+command Q execute "quit"
+command Wq execute "wq"
+command WQ execute "wq"
 
 " Airline config source file
 so ~/.vim/source/vim-airline.vim

@@ -84,7 +84,6 @@ export MANPATH=$MANPATH:/usr/local/texlive/2017/texmf-dist/doc/man
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 
-
 ## source alias file
 if [[ -f ~/.shell_aliases ]]; then
 	. ~/.shell_aliases
@@ -130,6 +129,14 @@ alias tw="source activate twitch"
 # added by Anaconda3 installer
 export PATH="/home/jonathan/anaconda3/bin:$PATH"
 
+# Turn off ctrl-s freeze
+stty -ixoff -ixon
+#stty sane
+
+# umount sshfs mounted NAS without sudo
+#fusermount -u mountpoint
+
+
 ## Start tmux when terminal opens
 #alias tmux="tmux -2"
 #tmux attach &> /dev/null 
@@ -141,4 +148,3 @@ export PATH="/home/jonathan/anaconda3/bin:$PATH"
 alias tmux="tmux -2"
 #[[ $- != *i* ]] && return
 #[[ -z "$TMUX" ]] && exec tmux
-
