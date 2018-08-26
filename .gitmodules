@@ -16,9 +16,9 @@
 [submodule ".vim/bundle/vim-latex"]
 	path = .vim/bundle/vim-latex
 	url = https://github.com/vim-latex/vim-latex.git
-[submodule ".vim/bundle/vim-live-latex-preview"]
-	path = .vim/bundle/vim-live-latex-preview
-	url = https://github.com/ying17zi/vim-live-latex-preview.git
+[submodule ".vim/bundle/vimtex"]
+    path = .vim/bundle/vimtex
+    url = https://github.com/lervag/vimtex
 [submodule ".vim/bundle/vim-easymotion"]
 	path = .vim/bundle/vim-easymotion
     url = https://github.com/easymotion/vim-easymotion.git

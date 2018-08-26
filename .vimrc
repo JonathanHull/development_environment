@@ -94,6 +94,9 @@ map <F10> :set spell! spell?<cr>
 " Change default .tex file syntax detection to latex.
 let g:tex_flavor="latex"
 
+" set vimtex settings
+let g:vimtex_view_method = 'mupdf'
+
 " Set Vim to scroll multiple lines per tick.
 nnoremap <C-e> 2<C-e>
 nnoremap <C-y> 2<C-y>
