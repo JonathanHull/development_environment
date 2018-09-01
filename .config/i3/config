@@ -221,8 +221,11 @@ for_window [instance="ranger"] move to scratchpad
 exec urxvt -name cmus -fn "xft:DejaVu Sans Mono for Powerline-9" -e zsh -c cmus
 exec urxvt -name ranger -fn "xft:DejaVu Sans Mono for Powerline-9" -e zsh -c ranger
 
-# Executes everytime config is reloaded: Wallpaper
-exec_always feh --bg-scale /home/jonathan/.i3/wallpapers/futurama.jpg
+# Executes everytime config is reloaded:
+# Wallpaper (Dual monitor command).
+exec_always feh --bg-scale --no-xinerama /home/jonathan/.i3/wallpapers/wallpaper.jpg
+# Wallpaper (Single monitor command).
+#exec_always feh --bg-scale /home/jonathan/.i3/wallpapers/wallpaper.jpg
 
 # gaps
 for_window [class="^.*"] border pixel 3

@@ -10,7 +10,7 @@ flags = [
   '-fexceptions',
   '-ferror-limit=10000',
   '-DNDEBUG',
-  '-std=c99',
+  #'-std=c99',
   '-xc',
   '-isystem/usr/include/',
   ]
