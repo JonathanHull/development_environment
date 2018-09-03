@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/Command-T"]
     path = .vim/bundle/Command-T
     url = https://github.com/wincent/command-t
+[submodule "vim-cpp-enchanced-highlight"]
+    path = .vim/bundle/vim-cpp-enhanced-highlight
+    url = https://github.com/octol/vim-cpp-enhanced-highlight
