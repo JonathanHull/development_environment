@@ -92,7 +92,7 @@ nnoremap <C-t><C-b> :CommandTBuffer<CR>
 nnoremap <C-t><C-r> :CommandTCommand<CR>
 
 " Toggle NerdTree
-map <F5> :NERDTreeToggle <cr>
+map <silent><F5> :NERDTreeToggle <cr>
  
 " Toggle spell mode.
 map <F10> :set spell! spell?<cr>
