@@ -122,9 +122,10 @@ export PERL5LIB=.
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v='vim'
-
 ## current python project conda environment alias
 alias tw="source activate twitch"
+## docker shortcut 
+alias d="docker"
 
 # added by Anaconda3 installer
 export PATH="/home/jonathan/anaconda3/bin:$PATH"
@@ -146,5 +147,3 @@ stty -ixoff -ixon
 
 ## Tmux settings
 alias tmux="tmux -2"
-#[[ $- != *i* ]] && return
-#[[ -z "$TMUX" ]] && exec tmux
