@@ -41,6 +41,7 @@ set secure
 " Set senatic completion for youcompleteme
 let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
 let g:ycm_max_diagnostics_to_display = 333
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " vim-cpp-enhanced-highlight optional settings
 let g:cpp_class_scope_highlight = 1
@@ -72,7 +73,7 @@ map <leader>gl :Glog <cr>
 " Vim bindings
 " Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
-imap <C-x> <Esc>:set rnu! rnu?<CR>
+imap <C-x> <C-O>:set rnu! rnu?<CR>
 
 " Bind Control-S to save file.
 " If the current buffer has never been saved, it will have no name,
@@ -96,6 +97,7 @@ map <silent><F5> :NERDTreeToggle <cr>
  
 " Toggle spell mode.
 map <F10> :set spell! spell?<cr>
+imap <F10> <C-O>:set spell! spell?<cr>
 
 " Change default .tex file syntax detection to latex.
 let g:tex_flavor="latex"
