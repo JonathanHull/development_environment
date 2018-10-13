@@ -40,3 +40,6 @@
 [submodule "vim-cpp-enchanced-highlight"]
     path = .vim/bundle/vim-cpp-enhanced-highlight
     url = https://github.com/octol/vim-cpp-enhanced-highlight
+[submodule "emmet-vim"]
+    path = .vim/bundle/emmet-vim
+    url = https://github.com/mattn/emmet-vim
