@@ -70,6 +70,9 @@ map <leader>gd :Gdiff <cr>
 map <leader>gs :Gstatus <cr>
 map <leader>gl :Glog <cr>
 
+" emmet keybinds
+let g:user_emmet_leader_key=','
+
 " Vim bindings
 " Toggle relative number.
 map <C-x> :set rnu! rnu?<cr>
