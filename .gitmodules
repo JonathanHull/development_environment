@@ -43,3 +43,6 @@
 [submodule "emmet-vim"]
     path = .vim/bundle/emmet-vim
     url = https://github.com/mattn/emmet-vim
+[submodule "vim-python-pep8-indent"]
+    path = .vim/bundle/vim-python-pep8-indent
+    url = https://github.com/Vimjas/vim-python-pep8-indent
