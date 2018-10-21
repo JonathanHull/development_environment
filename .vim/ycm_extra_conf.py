@@ -15,7 +15,8 @@ flags = [
   '-isystem/usr/include/',
   ]
 
-SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', ]
+#SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', ]
+SOURCE_EXTENSIONS = [ '.c', ]
 
 def FlagsForFile( filename, **kwargs ):
   return {

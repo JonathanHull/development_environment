@@ -20,6 +20,11 @@ git clone --recurse-submodules https://github.com/vim/vim.git $install_dir
 current_dir=`pwd`
 
 cd $install_dir
+vim_version=`git tag | tail -n 1 | rev | cut -d. -f 2-3 | rev | cut -dv -f 2`
+vim_version=`echo "${vim_version//.}"`
+
+echo $vim_version
+exit
 
 ./configure --with-features=huge \
     --enable-multibyte \
@@ -32,7 +37,7 @@ cd $install_dir
     --enable-cscope \
     --prefix=/usr/local
 
-make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
-make install
+make VIMRUNTIMEDIR=/usr/local/share/vim/$vim_version
+#make install
 cd $current_dir
-rm -rf $install_dir
+#rm -rf $install_dir

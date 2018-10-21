@@ -147,3 +147,4 @@ stty -ixoff -ixon
 
 ## Tmux settings
 alias tmux="tmux -2"
+## pandoc markdown -> html
