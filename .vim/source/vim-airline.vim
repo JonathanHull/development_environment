@@ -38,7 +38,9 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 let g:airline#extentions#tabline#enabled = 1
-let g:airline#extentions#tabline#left_sep = ' '
-let g:airline#extentions#tabline#left_alt_sep = '|'
+"let g:airline#extentions#tabline#left_sep = ' '
+"let g:airline#extentions#tabline#left_alt_sep = '|'
 let g:airline#extentions#tabline#formatter = "default"
 let g:airline_exclude_preview=1
+
+let g:airline#extensions#tabline#enabled = 1

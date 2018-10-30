@@ -29,6 +29,12 @@ set hidden
 set mouse=a
 set t_Co=256
 
+" Enable copy/paste between vim - system clipboard
+vnoremap <C-y> "+yi<ESC><cr>
+imap <C-p> <ESC>"+p<cr>
+
+
+" Vim session options.
 set ssop-=options " Do not store global/local values in a session
 set ssop-=fields  " Do not store folds
 let g:session_autoload = 'no' " dissable vim-session start dialog
@@ -72,6 +78,9 @@ map <leader>gl :Glog <cr>
 
 " emmet keybinds
 let g:user_emmet_leader_key=','
+"let g:user_emmet_expandabbr_key='<Tab>'
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
 
 " Vim bindings
 " Toggle relative number.
@@ -97,6 +106,13 @@ nnoremap <C-t><C-r> :CommandTCommand<CR>
 
 " Toggle NerdTree
 map <silent><F5> :NERDTreeToggle <cr>
+
+" List buffers
+map <silent><F4> :buffers<CR>:buffer<Space>
+" Cycle through buffers
+nnoremap <PageUp> :bprevious<CR>
+nnoremap <PageDown> :bnext<CR>
+
  
 " Toggle spell mode.
 map <F10> :set spell! spell?<cr>
