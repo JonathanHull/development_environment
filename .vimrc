@@ -20,7 +20,7 @@ set ruler
 set backspace=indent,eol,start 
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
-colorscheme desert
+colorscheme jonathan
 
 set showcmd
 set showmatch
@@ -106,9 +106,10 @@ nnoremap <C-t><C-r> :CommandTCommand<CR>
 
 " Toggle NerdTree
 map <silent><F5> :NERDTreeToggle <cr>
-
 " List buffers
 map <silent><F4> :buffers<CR>:buffer<Space>
+" Terminal shortcut
+map <silent><F3> :terminal<CR>
 " Cycle through buffers
 nnoremap <PageUp> :bprevious<CR>
 nnoremap <PageDown> :bnext<CR>
