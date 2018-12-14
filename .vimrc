@@ -48,6 +48,7 @@ set secure
 let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
 let g:ycm_max_diagnostics_to_display = 333
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " vim-cpp-enhanced-highlight optional settings
 let g:cpp_class_scope_highlight = 1
@@ -78,6 +79,8 @@ map <leader>gl :Glog <cr>
 
 " emmet keybinds
 let g:user_emmet_leader_key=','
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 "let g:user_emmet_expandabbr_key='<Tab>'
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
@@ -133,6 +136,7 @@ nnoremap <C-y> 2<C-y>
 command Q execute "quit"
 command Wq execute "wq"
 command WQ execute "wq"
+command E execute "e"
 
 " Airline config source file
 so ~/.vim/source/vim-airline.vim
@@ -142,5 +146,18 @@ set guifont=DejaVu\ Sans:s12
 "autocmd VimEnter, VimLeave * silent !tmux set status
 "
 "" Tmux hide window when vim runs
+let s:tmuxToggle=1
 autocmd VimEnter * silent ! tmux set status off
 autocmd VimLeave * silent ! tmux set status on
+
+command! TM call ToggleTmux()
+function! ToggleTmux()
+    if s:tmuxToggle
+        map <silent><F12> :! tmux set status off<CR>
+        let s:tmuxToggle = 0
+    else
+        map <silent><F12> :! tmus set status on<CR>
+        let s:tmuxToggle = 1
+    endif
+    let s:tmuxToggle = !s:tmuxToggle
+endfunction
