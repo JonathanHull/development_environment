@@ -148,3 +148,6 @@ stty -ixoff -ixon
 ## Tmux settings
 alias tmux="tmux -2"
 ## pandoc markdown -> html
+
+## g++ pathing
+export LD_LIBRARY_PATH="/usr/local/lib/"
