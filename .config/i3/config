@@ -69,6 +69,10 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# Scroll through workspaces
+bindsym $mod+0xff56  workspace next_on_output
+bindsym $mod+0xff55  workspace prev_on_output
+
 # split in horizontal orientation
 bindsym $mod+b split h
 
@@ -208,12 +212,21 @@ bar {
 bindsym XF86AudioRaiseVolume exec --no-startup-id $i3_home/scripts/audio_volume.sh +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id $i3_home/scripts/audio_volume.sh -5%
 bindsym XF86AudioMute exec --no-startup-id $i3_home/scripts/audio_volume.sh mute
+bindsym XF86AudioMicMute exec --no-startup-id amixer -D pulse sset Capture toggle
 #bindsym F9 exec /home/jonathan/.config/i3/scripts/audio_device.sh
 bindsym F9 exec --no-startup-id /home/jonathan/.config/i3/scripts/toggleRS.sh
+
+# Change brightness of laptop backlight
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
  
 # List programs to start on login below:
 exec redshift -l 54.95:-1.56 -t 6500:5000 -g 0.8 -m randr
+# disable trackpad after typing
+exec syndaemon -i 1.0
 #exec /home/jonathan/.config/i3/auto_layout.sh
+# Turn microphone off
+exec amixer -D pulse sset Capture nocap
 
 # Move cmus terminal to scratchpad
 for_window [instance="cmus"] move to scratchpad
@@ -223,9 +236,9 @@ exec urxvt -name ranger -fn "xft:DejaVu Sans Mono for Powerline-9" -e zsh -c ran
 
 # Executes everytime config is reloaded:
 # Wallpaper (Dual monitor command).
-exec_always feh --bg-scale --no-xinerama /home/jonathan/.i3/wallpapers/wallpaper.jpg
+#exec_always feh --bg-scale --no-xinerama /home/jonathan/.i3/wallpapers/wallpaper.jpg
 # Wallpaper (Single monitor command).
-#exec_always feh --bg-scale /home/jonathan/.i3/wallpapers/wallpaper.jpg
+exec_always feh --bg-scale /home/jonathan/.i3/wallpapers/wallpaper.jpg
 
 # gaps
 for_window [class="^.*"] border pixel 3
@@ -233,4 +246,3 @@ smart_borders on
 smart_gaps on
 gaps inner 3
 gaps outer 3
-

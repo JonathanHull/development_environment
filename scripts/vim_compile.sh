@@ -24,7 +24,6 @@ vim_version=`git tag | tail -n 1 | rev | cut -d. -f 2-3 | rev | cut -dv -f 2`
 vim_version=`echo "${vim_version//.}"`
 
 echo $vim_version
-exit
 
 ./configure --with-features=huge \
     --enable-multibyte \
@@ -38,6 +37,6 @@ exit
     --prefix=/usr/local
 
 make VIMRUNTIMEDIR=/usr/local/share/vim/$vim_version
-#make install
+make install
 cd $current_dir
 #rm -rf $install_dir
