@@ -1,5 +1,6 @@
 " pathogen"
 execute pathogen#infect()
+execute pathogen#helptags()
 syntax on
 filetype plugin indent on
 
@@ -49,6 +50,9 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
 let g:ycm_max_diagnostics_to_display = 333
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_always_populate_location_list = 1 "default 0
+let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
+set signcolumn=no
 
 " vim-cpp-enhanced-highlight optional settings
 let g:cpp_class_scope_highlight = 1
@@ -77,10 +81,11 @@ map <leader>gd :Gdiff <cr>
 map <leader>gs :Gstatus <cr>
 map <leader>gl :Glog <cr>
 
-" emmet keybinds
+" emmet keybinds -- HTML django
 let g:user_emmet_leader_key=','
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+au BufNewFile,BufRead *.html set filetype=htmldjango
 "let g:user_emmet_expandabbr_key='<Tab>'
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
