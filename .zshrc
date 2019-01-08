@@ -89,6 +89,10 @@ if [[ -f ~/.shell_aliases ]]; then
 	. ~/.shell_aliases
 fi
 
+function mupdfnh() {
+    nohup mupdf $1 > /dev/null 2>&1 &
+}
+
 ## Prioritise Python2.7  over 3.6
 ## alias python="python2.7"
 
