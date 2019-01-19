@@ -218,6 +218,11 @@ bindsym F9 exec --no-startup-id /home/jonathan/.config/i3/scripts/toggleRS.sh
 
 bindsym XF86Display exec --no-startup-id $i3_home/scripts/external_monitor.sh
 
+## auto screen lock
+exec --no-startup-id xautolock -time 10 -locker /home/jonathan/.config/i3/lock/lock.sh
+## Turn off screen after x seconds
+exec --no-startup-id xset dpms 600
+
 # Change brightness of laptop backlight
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
@@ -229,6 +234,9 @@ exec syndaemon -i 1.0
 #exec /home/jonathan/.config/i3/auto_layout.sh
 # Turn microphone off
 exec amixer -D pulse sset Capture nocap
+
+# Laptop kb backlight default setting
+exec echo 1 > /sys/class/leds/tpacpi::kbd_backlight/brightness
 
 # Move cmus terminal to scratchpad
 for_window [instance="cmus"] move to scratchpad

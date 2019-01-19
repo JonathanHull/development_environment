@@ -34,12 +34,6 @@
 [submodule ".vim/bundle/Command-T"]
     path = .vim/bundle/Command-T
     url = https://github.com/wincent/Command-T.git
-[submodule "vim-cpp-enchanced-highlight"]
-    path = .vim/bundle/vim-cpp-enhanced-highlight
-    url = https://github.com/octol/vim-cpp-enhanced-highlight
-[submodule "vim-python-pep8-indent"]
-    path = .vim/bundle/vim-python-pep8-indent
-    url = https://github.com/Vimjas/vim-python-pep8-indent
 [submodule ".vim/bundle/DoxygenToolkit.vim"]
 	path = .vim/bundle/DoxygenToolkit.vim
 	url = https://github.com/vim-scripts/DoxygenToolkit.vim
