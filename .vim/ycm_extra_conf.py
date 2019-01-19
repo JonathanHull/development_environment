@@ -3,20 +3,20 @@ import ycm_core
 
 flags = [
   '-Wall',
+  '-Wshadow',
   '-Wextra',
   '-Werror',
   '-Wno-long-long',
   '-Wno-variadic-macros',
   '-fexceptions',
   '-ferror-limit=10000',
-  '-DNDEBUG',
+  #'-DNDEBUG',
   #'-std=c99',
-  '-xc',
-  '-isystem/usr/include/',
+  #'-xc',
+  #'-isystem/usr/include/',
   ]
 
-#SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', ]
-SOURCE_EXTENSIONS = [ '.c', ]
+SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', ]
 
 def FlagsForFile( filename, **kwargs ):
   return {
