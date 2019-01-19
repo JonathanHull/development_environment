@@ -38,5 +38,10 @@ echo $vim_version
 
 make VIMRUNTIMEDIR=/usr/local/share/vim/$vim_version
 make install
+
+# Submodule installation. -- create switch to handle this as extra
+# cd ~/.vim/bundle/YouCompleteMe/
+# ./install.py --clang-completer --ts-completer
+
 cd $current_dir
 #rm -rf $install_dir
