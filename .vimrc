@@ -47,17 +47,27 @@ set secure
 
 " Set senatic completion for youcompleteme
 let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
+let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_max_diagnostics_to_display = 333
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_always_populate_location_list = 1 "default 0
 let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
-set signcolumn=no
+" Gutter
+set signcolumn=auto
 
 " vim-cpp-enhanced-highlight optional settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
+
+" DoxygenToolKit settings
+let g:DoxygenToolKit_authorName="Jonathan Hull"
+let g:DoxygenToolKit_blockHeader="@Synopsis  "
+let g:DoxygenToolKit_blockHeader="@Param  "
+let g:DoxygenToolKit_blockHeader="@Returns  "
+let g:DoxygenToolKit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolKit_blockFooter="----------------------------------------------------------------------------"
 
 " enable doxygen highlighting
 augroup project
