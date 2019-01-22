@@ -53,6 +53,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_always_populate_location_list = 1 "default 0
 let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
+let g:ycm_confirm_extra_conf = 0
 " Gutter
 set signcolumn=auto
 
