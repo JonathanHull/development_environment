@@ -57,6 +57,10 @@ let g:ycm_confirm_extra_conf = 0
 " Gutter
 set signcolumn=auto
 
+" nvimr
+let R_setwidth = 0
+let R_clear_line = 0
+
 " vim-cpp-enhanced-highlight optional settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
@@ -130,8 +134,8 @@ map <silent><F4> :buffers<CR>:buffer<Space>
 " Terminal shortcut
 map <silent><F3> :terminal<CR>
 " Cycle through buffers
-nnoremap <PageUp> :bprevious<CR>
-nnoremap <PageDown> :bnext<CR>
+map <PageUp> :bprevious<CR>
+map <PageDown> :bnext<CR>
 
  
 " Toggle spell mode.
