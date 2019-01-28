@@ -4,7 +4,7 @@ scrot /tmp/screen.png
 #convert /tmp/screen.png -paint 3 /tmp/screen.png
 convert /tmp/screen.png -scale 10% -scale 1000% /tmp/screen.png
  
-if [[ -f $HOME/.config/i3/lock/lock.png ]]; then
+if [ -f $HOME/.config/i3/lock/lock.png ] || [ ! ps aux | grep i3lock | grep -v grep ]; then
     # placement x/y
     PX=0
     PY=0
@@ -30,6 +30,8 @@ if [[ -f $HOME/.config/i3/lock/lock.png ]]; then
         convert /tmp/screen.png $HOME/.config/i3/lock/lock.png -geometry +$PX+$PY -composite -matte  /tmp/screen.png
         echo "done"
     done
+else
+    echo "here";
 fi
 
 i3lock -e -u -n -i /tmp/screen.png
