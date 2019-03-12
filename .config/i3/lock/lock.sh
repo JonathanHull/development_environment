@@ -24,6 +24,10 @@ if [ -f $HOME/.config/i3/lock/lock.png ] || [ ! ps aux | grep i3lock | grep -v g
 		PX=$(($SROX + $((SRX/2)) - $((RX/2))))
 		PY=$(($SROY + $((SRY/2)) - $((RY/2))))
 
+        # Compensate for lock image size
+        PX=$(($PX - 64))
+        PY=$(($PY - 64))
+
 		echo $PX
 		echo $PY
 
