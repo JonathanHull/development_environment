@@ -7,7 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster1"
 
 ## Tmux settings
 #alias tmux="tmux -2"
@@ -65,6 +65,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -88,10 +89,6 @@ bindkey "^R" history-incremental-search-backward
 if [[ -f ~/.shell_aliases ]]; then
 	. ~/.shell_aliases
 fi
-
-function mupdfnh() {
-    nohup mupdf $1 > /dev/null 2>&1 &
-}
 
 ## Prioritise Python2.7  over 3.6
 ## alias python="python2.7"
@@ -155,3 +152,7 @@ alias tmux="tmux -2"
 
 ## g++ pathing
 export LD_LIBRARY_PATH="/usr/local/lib/"
+
+## Change ls colors
+## LS_COLOR
+source ~/.dircolors 
