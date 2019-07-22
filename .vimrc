@@ -54,8 +54,19 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_always_populate_location_list = 1 "default 0
 let g:ycm_open_loclist_on_ycm_diags = 1 "default 1
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_disable_for_files_larger_than_kb=5000
 " Gutter
 set signcolumn=auto
+
+" Enable gopls go semantic error checker 
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
+" vim-gitgutter
+set updatetime=100
+map  <silent> <C-g> :GitGutterToggle<CR>
+imap <silent> <C-g> :GitGutterToggle<CR>
+let g:gitgutter_enabled = 0
 
 " nvimr
 let R_setwidth = 0
@@ -71,7 +82,7 @@ let g:DoxygenToolKit_authorName="Jonathan Hull"
 let g:DoxygenToolKit_blockHeader="@Synopsis  "
 let g:DoxygenToolKit_blockHeader="@Param  "
 let g:DoxygenToolKit_blockHeader="@Returns  "
-let g:DoxygenToolKit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolKit_blockHeader="----------------------------------------------------------------------------"
 let g:DoxygenToolKit_blockFooter="----------------------------------------------------------------------------"
 
 " enable doxygen highlighting
@@ -158,9 +169,13 @@ command Wq execute "wq"
 command WQ execute "wq"
 command E execute "e"
 
+"" Source files
 " Airline config source file
 so ~/.vim/source/vim-airline.vim
 set guifont=DejaVu\ Sans:s12
+
+" Source vim scripts
+so ~/.vim/scripts/bclose.vim
 
 "" Tmux rename window to vim
 "autocmd VimEnter, VimLeave * silent !tmux set status
