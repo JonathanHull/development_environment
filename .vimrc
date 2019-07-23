@@ -142,8 +142,15 @@ nnoremap <C-t><C-r> :CommandTCommand<CR>
 map <silent><F5> :NERDTreeToggle <cr>
 " List buffers
 map <silent><F4> :buffers<CR>:buffer<Space>
+
 " Terminal shortcut
 map <silent><F3> :terminal<CR>
+" Do not add Terminals to buffers
+augroup termIgnore
+    autocmd!
+    autocmd TerminalOpen * set nobuflisted
+augroup END
+
 " Cycle through buffers
 map <PageUp> :bprevious<CR>
 map <PageDown> :bnext<CR>
